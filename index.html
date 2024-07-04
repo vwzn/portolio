@@ -5,394 +5,262 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>My Portfolio</title>
+
         <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="style.css" />
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+            rel="stylesheet" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+            rel="stylesheet" />
+
+        <style>
+            body {
+                font-family: "Inter", sans-serif;
+            }
+        </style>
     </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
-            <div class="container">
-                <a class="navbar-brand" href="#">My Portfolio</a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a
-                                class="nav-link active"
-                                aria-current="page"
-                                href="#"
-                                >Home</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#certificates"
-                                >Certificates</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
+    <body class="bg-base-100">
+        <!-- Navbar -->
+        <div class="navbar bg-base-100 fixed top-0 z-50 shadow-lg">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul
+                        tabindex="0"
+                        class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#certificates">Certificates</a></li>
                     </ul>
                 </div>
+                <a class="btn btn-ghost normal-case text-xl">VWZN</a>
             </div>
-        </nav>
-
-        <header>
-            <div class="container vh-100 text-center d-flex">
-                <div
-                    class="row align-items-center justify-content-between d-flex">
-                    <div class="col-md-6">
-                        <h1 class="fw-bolder mb-4">
-                            Hello, I'm Ahmad Fauzan Abdurrohman
-                        </h1>
-                        <p class="lead mb-4">
-                            I'm a web developer with over 2 years of experience
-                            in creating beautiful and functional websites.
-                        </p>
-                        <a href="#contact" class="btn btn-primary btn-lg"
-                            >Contact Me</a
-                        >
-                    </div>
-                    <div class="col-md-6 align-content-center text-center">
-                        <img
-                            src="brigita.jpg"
-                            alt="Profile Picture"
-                            style="height: 400px"
-                            class="img-fluid rounded-circle" />
-                    </div>
-                </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal p-0">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                </ul>
             </div>
-        </header>
+        </div>
 
-        <section id="about">
-            <div class="container vh-100 d-flex text-center py-5">
-                <div class="row align-items-center justify-content-end py-5">
-                    <div class="col-md-6">
-                        <h2 class="fw-bolder mb-4 fw-bold">About Me</h2>
-                        <p class="lead fw-bold">
-                            Halo, saya Ahmad Fauzan Abdurrohman, seorang
-                            mahasiswa dengan minat dalam Front-End dan Back-End.
-                            Saya memiliki latar belakang pendidikan di Teknik
-                            Informatika jurusan Rekayasa Perangkat Lunak dari
-                            STMIK Mardira Indonesia. Saya juga tertarik untuk
-                            membuat website berbasis Laravel, Vue.js, Bootstrap,
-                            Tailwind CSS, MySQL, Javascript, C++. Terima kasih
-                            telah meluangkan waktu untuk melihat portofolio
-                            saya. Jika Anda tertarik untuk bekerja sama, jangan
-                            ragu untuk menghubungi saya.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="certificates">
-            <div
-                class="container d-flex text-center flex-column align-content-center align-items-center justify-content-center">
+        <!-- Hero Section -->
+        <div class="hero min-h-screen bg-base-200">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+                <img
+                    src="fzn.png"
+                    class="max-w-sm rounded-lg shadow-2xl sm:w-2/4"
+                    alt="Profile" />
                 <div>
-                    <h2 class="fw-bolder text-center mb-5 text-white py-5 mt-5">
-                        My Certificates
-                    </h2>
-                    <div class="row gx-5 d-flex justify-content-center">
-                        <div
-                            class="col-md-5 mb-4 d-flex justify-content-center">
-                            <div
-                                class="card h-100"
-                                style="width: 28rem"
-                                id="section-card">
-                                <embed
-                                    src="sertifikat/SERTIFIKAT-KOMINFO.pdf"
-                                    type="application/PDF"
-                                    height="365" />
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        SERTIFIKAT KOMINFO
-                                    </h5>
+                    <h1 class="text-5xl font-bold">HI, I'M</h1>
+                    <p class="py-6">Ahmad Fauzan Abdurrohman</p>
+                </div>
+            </div>
+        </div>
 
-                                    <a
-                                        href="sertifikat/SERTIFIKAT-KOMINFO.pdf"
-                                        class="btn btn-primary"
-                                        >Lihat</a
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="col-md-5 mb-4 d-flex justify-content-center">
-                            <div
-                                class="card h-100"
-                                style="width: 28rem"
-                                id="section-card">
-                                <embed
-                                    src="sertifikat/SERTIFIKAT HTML.pdf"
-                                    type="application/PDF"
-                                    height="365" />
-                                <div class="card-body">
-                                    <h5 class="card-title">SERTIFIKAT HTML</h5>
-
-                                    <a
-                                        href="sertifikat/SERTIFIKAT HTML.pdf"
-                                        class="btn btn-primary"
-                                        >Lihat</a
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="col-md-5 mb-4 d-flex justify-content-center">
-                            <div
-                                class="card h-100"
-                                style="width: 28rem"
-                                id="section-card">
-                                <embed
-                                    src="sertifikat/SERTIFIKAT JAVASCRIPT.pdf"
-                                    type="application/PDF"
-                                    height="365" />
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        SERTIFIKAT JAVASCRIPT
-                                    </h5>
-
-                                    <a
-                                        href="sertifikat/SERTIFIKAT JAVASCRIPT.pdf"
-                                        class="btn btn-primary"
-                                        >Lihat</a
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="col-md-5 mb-4 d-flex justify-content-center">
-                            <div
-                                class="card h-100"
-                                style="width: 28rem"
-                                id="section-card">
-                                <embed
-                                    src="sertifikat/SERTIFIKAT PHP.pdf"
-                                    type="application/PDF"
-                                    height="365" />
-                                <div class="card-body">
-                                    <h5 class="card-title">SERTIFIKAT PHP</h5>
-
-                                    <a
-                                        href="sertifikat/SERTIFIKAT PHP.pdf"
-                                        class="btn btn-primary"
-                                        >Lihat</a
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="col-md-5 mb-4 d-flex justify-content-center">
-                            <div
-                                class="card h-100"
-                                style="width: 28rem"
-                                id="section-card">
-                                <embed
-                                    src="sertifikat/SERTIFIKAT MYSQL.pdf"
-                                    type="application/PDF"
-                                    height="365" />
-                                <div class="card-body">
-                                    <h5 class="card-title">SERTIFIKAT MYSQL</h5>
-
-                                    <a
-                                        href="sertifikat/SERTIFIKAT MYSQL.pdf"
-                                        class="btn btn-primary"
-                                        >Lihat</a
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <!-- About Section -->
+        <section id="about" class="py-16 bg-base-100">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-8">About Me</h2>
+                <div class="max-w-2xl mx-auto">
+                    <p class="text-lg leading-relaxed">
+                        Halo, saya Ahmad Fauzan Abdurrohman, seorang mahasiswa
+                        dengan minat dalam Front-End dan Back-End. Saya memiliki
+                        latar belakang pendidikan di Teknik Informatika jurusan
+                        Rekayasa Perangkat Lunak dari STMIK Mardira Indonesia.
+                        Saya juga tertarik untuk membuat website berbasis
+                        Laravel, Vue.js, Bootstrap, Tailwind CSS, MySQL,
+                        Javascript, C++. Terima kasih telah meluangkan waktu
+                        untuk melihat portofolio saya. Jika Anda tertarik untuk
+                        bekerja sama, jangan ragu untuk menghubungi saya.
+                    </p>
                 </div>
             </div>
         </section>
 
-        <section id="portfolio">
-            <div
-                class="container vh-100 d-flex text-center flex-column justify-content-center align-content-center align-items-center">
-                <h2 class="fw-bolder text-center mb-5 text-white">
-                    My Portfolio
+        <!-- Certificates Section -->
+        <section id="certificates" class="py-16 bg-base-200">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-8">
+                    My Certificates
                 </h2>
-                <div class="row">
-                    <div class="col-md-4 mb-4 d-flex justify-content-center">
-                        <div class="card h-100" id="portfolio-card">
-                            <div class="card-body">
-                                <h3 class="card-title fw-bolder">Project 1</h3>
-                                <a href="https://vwzn-dashboard.vercel.app"
-                                    >Open</a
-                                >
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Phasellus tincidunt urna eu
-                                    augue tristique, a volutpat enim bibendum.
-                                    In dapibus nisl nec orci fermentum luctus.
-                                </p>
-                            </div>
-                            <img
-                                src="images/portfolio-1.jpg"
-                                alt="Portfolio Picture 1"
-                                class="card-img-top" />
+                <div class="flex flex-wrap justify-center gap-8">
+                    <!-- Certificate Card -->
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <embed
+                            src="sertifikat/SERTIFIKAT-KOMINFO.pdf"
+                            type="application/pdf"
+                            height="365" />
+                        <div class="card-body">
+                            <h2 class="card-title">SERTIFIKAT KOMINFO</h2>
+                            <a
+                                href="sertifikat/SERTIFIKAT-KOMINFO.pdf"
+                                class="btn btn-primary"
+                                >Lihat</a
+                            >
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4 d-flex justify-content-center">
-                        <div class="card h-100" id="portfolio-card">
-                            <div class="card-body">
-                                <h3 class="card-title fw-bolder">Project 2</h3>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Phasellus tincidunt urna eu
-                                    augue tristique, a volutpat enim bibendum.
-                                    In dapibus nisl nec orci fermentum luctus.
-                                </p>
-                            </div>
-                            <img
-                                src="images/portfolio-2.jpg"
-                                alt="Portfolio Picture 2"
-                                class="card-img-top" />
+                    <!-- Repeat for other certificates -->
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <embed
+                            src="sertifikat/SERTIFIKAT HTML.pdf"
+                            type="application/pdf"
+                            height="365" />
+                        <div class="card-body">
+                            <h2 class="card-title">SERTIFIKAT HTML</h2>
+                            <a
+                                href="sertifikat/SERTIFIKAT HTML.pdf"
+                                class="btn btn-primary"
+                                >Lihat</a
+                            >
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4 d-flex justify-content-center">
-                        <div class="card h-100" id="portfolio-card">
-                            <div class="card-body">
-                                <h3 class="card-title fw-bolder">Project 3</h3>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Phasellus tincidunt urna eu
-                                    augue tristique, a volutpat enim bibendum.
-                                    In dapibus nisl nec orci fermentum luctus.
-                                </p>
-                            </div>
-                            <img
-                                src="images/portfolio-3.jpg"
-                                alt="Portfolio Picture 3"
-                                class="card-img-top" />
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <embed
+                            src="sertifikat/SERTIFIKAT JAVASCRIPT.pdf"
+                            type="application/pdf"
+                            height="365" />
+                        <div class="card-body">
+                            <h2 class="card-title">SERTIFIKAT JAVASCRIPT</h2>
+                            <a
+                                href="sertifikat/SERTIFIKAT JAVASCRIPT.pdf"
+                                class="btn btn-primary"
+                                >Lihat</a
+                            >
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact">
-            <div
-                class="container vh-100 d-flex text-center flex-column justify-content-center align-content-center">
-                <h2 class="fw-bolder text-center mb-5 text-white">
-                    Contact Me
-                </h2>
-                <div class="row">
-                    <div class="col-md-6">
-                        <form action="msg.html" method="post">
-                            <div class="form-group mb-3" id="contact-card">
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    placeholder="Name"
-                                    required />
-                            </div>
-                            <div class="form-group mb-3" id="contact-card">
-                                <input
-                                    type="email"
-                                    class="form-control"
-                                    placeholder="Email"
-                                    required />
-                            </div>
-                            <div class="form-group mb-3" id="contact-card">
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    placeholder="Subject"
-                                    required />
-                            </div>
-                            <div class="form-group mb-3" id="contact-card">
-                                <textarea
-                                    class="form-control"
-                                    placeholder="Message"
-                                    required></textarea>
-                            </div>
-                            <div class="form-group mb-3 text-center">
-                                <button type="submit" class="btn btn-primary">
-                                    Submit
-                                </button>
-                            </div>
-                        </form>
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <embed
+                            src="sertifikat/SERTIFIKAT PHP.pdf"
+                            type="application/pdf"
+                            height="365" />
+                        <div class="card-body">
+                            <h2 class="card-title">SERTIFIKAT PHP</h2>
+                            <a
+                                href="sertifikat/SERTIFIKAT PHP.pdf"
+                                class="btn btn-primary"
+                                >Lihat</a
+                            >
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="card bg-primary text-white">
-                            <div class="card-body">
-                                <h3 class="fw-bolder">Contact Information</h3>
-                                <p>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="16"
-                                        height="16"
-                                        fill="currentColor"
-                                        class="bi bi-geo-alt-fill"
-                                        viewBox="0 0 16 16">
-                                        <path
-                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
-                                    </svg>
-                                    Bandung, Indonesia
-                                </p>
-                                <p>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="16"
-                                        height="16"
-                                        fill="currentColor"
-                                        class="bi bi-phone-fill"
-                                        viewBox="0 0 16 16">
-                                        <path
-                                            d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z" />
-                                    </svg>
-                                    +62 812 2401 3286
-                                </p>
-                                <p>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="16"
-                                        height="16"
-                                        fill="currentColor"
-                                        class="bi bi-envelope-fill"
-                                        viewBox="0 0 16 16">
-                                        <path
-                                            d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
-                                    </svg>
-                                    fauzan.abd.1703@gmail.com
-                                </p>
-                            </div>
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <embed
+                            src="sertifikat/SERTIFIKAT MYSQL.pdf"
+                            type="application/pdf"
+                            height="365" />
+                        <div class="card-body">
+                            <h2 class="card-title">SERTIFIKAT MYSQL</h2>
+                            <a
+                                href="sertifikat/SERTIFIKAT MYSQL.pdf"
+                                class="btn btn-primary"
+                                >Lihat</a
+                            >
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Bootstrap core JS -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-            crossorigin="anonymous"></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-            integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-            crossorigin="anonymous"></script>
-
-        <!-- Custom JS -->
-        <script src="js/script.js"></script>
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 bg-base-100">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-8">Contact Me</h2>
+                <div class="flex flex-wrap justify-center gap-8">
+                    <!-- WhatsApp -->
+                    <div class="card w-36 bg-base-100 shadow-xl">
+                        <div class="card-body flex items-center justify-center">
+                            <a
+                                href="https://wa.me/6281224013286"
+                                target="_blank"
+                                class="flex items-center">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="50"
+                                    height="50"
+                                    fill="#25D366"
+                                    class="bi bi-whatsapp"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.601 2.399a8.202 8.202 0 0 0-11.602 0 8.203 8.203 0 0 0 0 11.602l1.028-1.028a.676.676 0 0 0-.164-.84l-.933-.933a.676.676 0 0 0-.84-.164L.602 13.399a8.198 8.198 0 0 0 11.602 0 8.202 8.202 0 0 0 0-11.602zM8.157 12.157a4.157 4.157 0 1 1 0-8.314 4.157 4.157 0 0 1 0 8.314zm2.5-4.25a.678.678 0 0 0-.664.785c.091.554-.019.91-.236 1.078-.217.168-.508.15-.789-.036-.184-.124-.354-.261-.59-.41a.679.679 0 0 0-.686-.064c-.404.183-.807.345-1.212.49-.406.145-.821.2-1.246.162-.267-.023-.54-.049-.793-.085a.678.678 0 0 0-.754.634l-.016.079c-.099.52-.2 1.035-.321 1.54-.12.505-.243 1.003-.442 1.49-.198.487-.407.963-.635 1.434-.228.47-.491.923-.779 1.369a.678.678 0 0 0 .228.91l1.024 1.024a.678.678 0 0 0 .91-.228c.587-.97 1.148-1.973 1.644-2.992.496-1.02.974-2.05 1.445-3.082.47-1.032.928-2.071 1.368-3.119a.678.678 0 0 0-.221-.91l-1.024-1.024a.678.678 0 0 0-.91.221z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Instagram -->
+                    <div class="card w-36 bg-base-100 shadow-xl">
+                        <div class="card-body flex items-center justify-center">
+                            <a
+                                href="https://www.instagram.com/_vwzn_"
+                                target="_blank"
+                                class="flex items-center">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="50"
+                                    height="50"
+                                    fill="#E4405F"
+                                    class="bi bi-instagram"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0c2.21 0 2.473.007 3.332.048.858.041 1.44.184 1.88.398.502.247.86.558 1.237 1.004.418.489.731.855 1.015 1.377.221.451.358 1.047.398 1.878.041.861.048 1.125.048 3.34 0 2.216-.007 2.478-.048 3.338-.041.858-.184 1.44-.398 1.88a3.47 3.47 0 0 1-1.004 1.237 3.468 3.468 0 0 1-1.377 1.015c-.451.221-1.047.358-1.878.398-.861.041-1.125.048-3.338.048-2.216 0-2.478-.007-3.338-.048-.858-.041-1.44-.184-1.88-.398a3.47 3.47 0 0 1-1.237-1.004 3.47 3.47 0 0 1-1.015-1.377c-.221-.451-.358-1.047-.398-1.878-.041-.861-.048-1.125-.048-3.338 0-2.215.007-2.478.048-3.338.041-.858.184-1.44.398-1.88A3.467 3.467 0 0 1 1.768 1.768a3.467 3.467 0 0 1 1.377-1.015c.451-.221 1.047-.358 1.878-.398.861-.041 1.125-.048 3.338-.048zM8 1.755c-2.162 0-2.418.007-3.273.047-.795.037-1.17.171-1.44.29-.317.142-.546.31-.885.648-.338.338-.506.568-.648.885-.12.27-.254.645-.29 1.44-.04.855-.047 1.111-.047 3.273 0 2.163.007 2.418.047 3.273.037.795.171 1.17.29 1.44.142.317.31.546.648.885.338.338.568.506.885.648.27.12.645.254 1.44.29.855.04 1.111.047 3.273.047 2.162 0 2.418-.007 3.273-.047.795-.037 1.17-.171 1.44-.29.317-.142.546-.31.885-.648.338-.338.506-.568.648-.885.12-.27.254-.645.29-1.44.04-.855.047-1.111.047-3.273 0-2.162-.007-2.418-.047-3.273-.037-.795-.171-1.17-.29-1.44a2.777 2.777 0 0 0-.648-.885 2.777 2.777 0 0 0-.885-.648c-.27-.12-.645-.254-1.44-.29-.855-.04-1.111-.047-3.273-.047zM8 3.838a4.163 4.163 0 1 0 0 8.325 4.163 4.163 0 0 0 0-8.325zM8 10.44a2.44 2.44 0 1 1 0-4.88 2.44 2.44 0 0 1 0 4.88zm3.85-6.34a1.017 1.017 0 1 0 0-2.034 1.017 1.017 0 0 0 0 2.034z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- LinkedIn -->
+                    <div class="card w-36 bg-base-100 shadow-xl">
+                        <div class="card-body flex items-center justify-center">
+                            <a
+                                href="https://www.linkedin.com/in/ahmad-fauzan-abdurrohman-440996269/"
+                                target="_blank"
+                                class="flex items-center">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="50"
+                                    height="50"
+                                    fill="#0077B5"
+                                    class="bi bi-linkedin"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M1.146 1.146a.5.5 0 0 1 .708 0L8 7.293l6.146-6.147a.5.5 0 1 1 .708.708L8.707 8l6.147 6.146a.5.5 0 0 1-.708.708L8 8.707l-6.146 6.147a.5.5 0 0 1-.708-.708L7.293 8 1.146 1.854a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- GitHub -->
+                    <div class="card w-36 bg-base-100 shadow-xl">
+                        <div class="card-body flex items-center justify-center">
+                            <a
+                                href="https://github.com/vwzn"
+                                target="_blank"
+                                class="flex items-center">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="50"
+                                    height="50"
+                                    fill="#181717"
+                                    class="bi bi-github"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.1 0 0 .67-.22 2.2.82.64-.18 1.33-.27 2.02-.27.68 0 1.38.09 2.02.27 1.53-1.04 2.2-.82 2.2-.82.44 1.09.16 1.9.08 2.1.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.64 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.45.55.38A8.003 8.003 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </body>
 </html>
