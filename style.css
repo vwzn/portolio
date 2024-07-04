@@ -1,0 +1,98 @@
+@media screen and (max-width: 375px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .navbar {
+        position: sticky;
+        top: 0;
+    }
+}
+
+body {
+    background: url('bg1.avif');
+    background-size: cover;
+
+}
+
+#navbar {
+    z-index: 99;
+}
+
+/* header {
+    background: url('bg1.avif');
+    background-size: cover;
+    
+}
+
+#about {
+    background: url('bg1.avif');
+    background-size: cover;
+}
+
+#services {
+    background: url('bg1.avif');
+    background-size: cover;
+}
+
+#portfolio {
+    background: url('bg1.avif');
+    background-size: cover;
+}
+
+#contact {
+    background: url('bg1.avif');
+    background-size: cover;
+} */
+
+#section-card {
+    background: transparent;
+    /* Warna latar belakang dengan transparansi */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    /* Garis tepi dengan transparansi */
+    border-radius: 38px;
+    /* Melengkungkan sudut elemen */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Efek bayangan untuk memberikan kedalaman */
+    backdrop-filter: blur(10px);
+    /* Efek blur untuk latar belakang */
+    transition: 3s;
+}
+
+#section-card:hover {
+    color: white;
+}
+
+#portfolio-card {
+    background: transparent;
+    /* Warna latar belakang dengan transparansi */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    /* Garis tepi dengan transparansi */
+    border-radius: 38px;
+    /* Melengkungkan sudut elemen */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Efek bayangan untuk memberikan kedalaman */
+    backdrop-filter: blur(10px);
+    /* Efek blur untuk latar belakang */
+}
+
+#contact-card {
+    background: transparent;
+    /* Warna latar belakang dengan transparansi */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    /* Garis tepi dengan transparansi */
+    border-radius: 38px;
+    /* Melengkungkan sudut elemen */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Efek bayangan untuk memberikan kedalaman */
+    backdrop-filter: blur(10px);
+    /* Efek blur untuk latar belakang */
+}
+
+#certificates {
+    z-index: 0;
+}
