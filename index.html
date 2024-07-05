@@ -63,23 +63,24 @@
             <div class="hero-content flex-col lg:flex-row-reverse">
                 <img
                     src="fzn.png"
-                    class="max-w-sm rounded-lg shadow-2xl sm:w-2/4"
+                    class="sm:max-w-sm sm:rounded-sm sm:shadow-sm"
                     alt="Profile" />
-                <div>
-                    <p class="py-6">Hello! I'm</p>
-                    <h1 class="text-2xl font-bold">Ahmad Fauzan Abdurrohman</h1>
-                    <div class="container mx-auto">
-                        <div class="flex flex-wrap justify-center gap-2">
+                <div class="lg:px-10">
+                    <p class="py-2 sm:py-6 sm:text-sm">Hello! I'm</p>
+                    <h1 class="text-lg font-bold sm:text-2xl">Ahmad Fauzan Abdurrohman</h1>
+                    <div class="container mx-auto py-4 sm:py-6">
+                        <div class="flex flex-wrap justify-between gap-2">
                             <!-- WhatsApp -->
-                            <div class="card w-20 shadow-xl">
+                            <div class="shadow-xl">
                                 <div
-                                    class="card-body flex items-center justify-center">
+                                    class="flex items-center justify-center">
                                     <a
                                         href="https://wa.me/6281224013286"
                                         target="_blank"
                                         class="flex items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg"
-                                        width="50" height="50"
+                                        width="1em" height="1em"
+                                        class="icon"
                                         stroke="currentColor"
                                         fill="currentColor" stroke-width="0"
                                         area-hidden="true" focusable="false"
@@ -90,17 +91,18 @@
                                 </div>
                             </div>
                             <!-- Instagram -->
-                            <div class="card w-20 shadow-xl">
+                            <div class="shadow-xl">
                                 <div
-                                    class="card-body flex items-center justify-center">
+                                    class="flex items-center justify-center">
                                     <a
                                         href="https://www.instagram.com/_vwzn_"
                                         target="_blank"
                                         class="flex items-center">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
-                                            width="50"
-                                            height="50"
+                                            width="1em"
+                                            height="1em"
+                                            class="icon"
                                             stroke="currentColor"
                                             fill="currentColor"
                                             stroke-width="0"
@@ -114,17 +116,18 @@
                                 </div>
                             </div>
                             <!-- LinkedIn -->
-                            <div class="card w-20 shadow-xl">
+                            <div class="shadow-xl">
                                 <div
-                                    class="card-body flex items-center justify-center">
+                                    class="flex items-center justify-center">
                                     <a
                                         href="https://www.linkedin.com/in/ahmad-fauzan-abdurrohman-440996269/"
                                         target="_blank"
                                         class="flex items-center">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
-                                            width="50"
-                                            height="50"
+                                            width="1em"
+                                            height="1em"
+                                            class="icon"
                                             stroke="currentColor"
                                             fill="currentColor"
                                             stroke-width="0"
@@ -138,17 +141,18 @@
                                 </div>
                             </div>
                             <!-- GitHub -->
-                            <div class="card w-20 shadow-xl">
+                            <div class="shadow-xl">
                                 <div
-                                    class="card-body flex items-center justify-center">
+                                    class="flex items-center justify-center">
                                     <a
                                         href="https://github.com/vwzn"
                                         target="_blank"
                                         class="flex items-center">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
-                                            width="50"
-                                            height="50"
+                                            width="1em"
+                                            height="1em"
+                                            class="icon"
                                             stroke="currentColor"
                                             fill="currentColor"
                                             stroke-width="0"
@@ -166,19 +170,21 @@
                 </div>
             </div>
         </div>
+        <audio id="myAudio" autoplay>
+            <source src="song.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+        </audio>
 
         <!-- About Section -->
         <section id="about" class="py-16 bg-base-100">
             <div class="container mx-auto">
-                <h2 class="text-4xl font-bold text-center mb-8">About Me</h2>
+                <h2 class="lg:text-4xl font-bold text-center mb-8">About Me</h2>
                 <div class="max-w-2xl mx-auto">
-                    <p class="lg:text-lg leading-relaxed px-10">
+                    <p class="lg:text-lg leading-relaxed px-10 text-sm">
                         I am a 4th-semester student with a GPA of 3.63. I have
                         experience as a teaching assistant at Jenderal Ahmad
                         Yani University in the Chemistry department. My
-                        programming skills include JavaScript and PHP, and I am
-                        proficient in using various frameworks listed in my
-                        skillset. Additionally, I hold several certificates from
+                        programming skills include JavaScript and PHP. Additionally, I hold several certificates from
                         well-known companies.
                     </p>
                 </div>
@@ -189,12 +195,12 @@
         <section id="certificates" class="py-16 bg-base-200">
             <div
                 class="container mx-auto flex items-center justify-center flex-col">
-                <h2 class="text-4xl font-bold text-center mb-8">
+                <h2 class="lg:text-4xl font-bold text-center mb-8">
                     My Certificates
                 </h2>
                 <a
                     href="https://www.linkedin.com/in/ahmad-fauzan-abdurrohman-440996269/details/certifications/"
-                    class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg text-2xl link link-primary"
+                    class="btn btn-xs btn-sm md:btn-md sm:btn-lg lg:text-2xl link link-primary test-sm"
                     >Going to view my certificates</a
                 >
             </div>
