@@ -1,15 +1,33 @@
 @media screen and (min-width: 600px) {
-    .icon{
+    .icon {
         width: 2em;
         height: 2em;
+    }
+    img{
+        width: 350px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .icon{
+    .icon {
         width: 3em;
         height: 3em;
     }
+    img{
+        width: 500px;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .icon {
+        width: 1em;
+        height: 1em;
+    }
+    img{
+        width: 250px;
+    }
+    
 }
 
 body {
